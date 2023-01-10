@@ -25,9 +25,9 @@ public class Reader {
         boolean success = folder.mkdir();
 
         if (success) {
-            System.out.println("A pasta output foi criada com sucesso");
-        } else {
-            System.out.println("Falha ao criar a pasta");
+            System.out.println("Pasta output foi criado com sucesso.");
+        } else { 
+            System.out.println("Falha ao criar a pasta output.");
         }
 
         int i = 1;
@@ -42,7 +42,7 @@ public class Reader {
     private static String pathName(String path) {
         List<String> results = new ArrayList<String>();
         File[] files = new File("input").listFiles();
-        for (File file : files) {
+        for(File file : files) {
             if (file.isFile()) {
                 results.add(file.getName());
             }

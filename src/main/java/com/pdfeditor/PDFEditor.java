@@ -6,9 +6,8 @@ import com.pdfeditor.compressor.ZipCompressor;
 import com.pdfeditor.reader.Reader;
 
 public class PDFEditor {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
         Reader.reader();
-        ZipCompressor.zipCompressor();
+        ZipCompressor.compressor();
     }
-
 }
